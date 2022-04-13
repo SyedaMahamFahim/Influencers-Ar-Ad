@@ -5,7 +5,7 @@ const OurPlatforms = () => {
     <>
     <section id="section-63-10588" className=" ct-section social-media-section">
         <div className="ct-section-inner-wrap">
-          <div id="div_block-64-10588" className="ct-div-block social-container aos-init aos-animate" data-aos-enable="true" data-aos="zoom-out-up" data-aos-once="true">
+          <div id="div_block-64-10588" className="ct-div-block social-container aos-init aos-animate" >
             <h2 id="headline-65-10588" className="ct-headline">Our platforms</h2>
             <div id="text_block-66-10588" className="ct-text-block">With a complementarity between micro and macro-influencers and a strategic target on each platform to hit the right target population you wish; we can fulfill your social media goals and establish a community instead of just take a typical UA approach.&nbsp;</div>
             <div id="div_block-67-10588" className="ct-div-block social-links">

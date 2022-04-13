@@ -1,7 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { MotionWrap } from "../../appWrapper/index";
 
 const FirstHomeComponent = () => {
+  const images = [
+    "/assests/images/MaskGroup1.png",
+    "/assests/images/MaskGroup2.png",
+  ];
+
+  const BrandsGroups = [
+    "/assests/images/logos1st_wave.png",
+    "/assests/images/logos2nd_wave.png",
+  ];
+
+  const [currentImage, setCurrentImage] = useState(
+    "/assests/images/MaskGroup1.png"
+  );
+  const [brandImg, setBrandImg] = useState("/assests/images/logos1st_wave.png");
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentImage(images[Math.floor(Math.random() * images.length)]);
+      setBrandImg(
+        BrandsGroups[Math.floor(Math.random() * BrandsGroups.length)]
+      );
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <>
       <section
@@ -17,30 +43,18 @@ const FirstHomeComponent = () => {
               <h2
                 id="headline-52-10495"
                 className="ct-headline aos-init aos-animate"
-                data-aos="fade-down"
-                data-aos-duration="400"
-                data-aos-delay="400"
-                data-aos-once="true"
               >
                 Gaming &amp; Esports Talent Agency
               </h2>
               <h2
                 id="headline-54-10495"
                 className="ct-headline aos-init aos-animate"
-                data-aos="fade-right"
-                data-aos-duration="400"
-                data-aos-delay="800"
-                data-aos-once="true"
               >
                 #Connect Your Brand With Arabic Millennials.
               </h2>
               <div
                 id="div_block-56-10495"
                 className="ct-div-block aos-init aos-animate"
-                data-aos="zoom-in"
-                data-aos-duration="400"
-                data-aos-delay="1200"
-                data-aos-once="true"
               >
                 <div
                   id="div_block-57-10495"
@@ -109,14 +123,9 @@ const FirstHomeComponent = () => {
                   </div>
                 </div>
               </div>
-              <div
-                id="div_block-626-10495"
-                className="ct-div-block aos-init aos-animate"
-                data-aos="fade-right"
-                data-aos-duration="2000"
-                data-aos-once="true"
-              >
-                <div id="div_block-669-10495" className="ct-div-block">
+              {console.log(brandImg)}
+              <div id="div_block-626-10495">
+                <div className="ct-div-block">
                   <a
                     id="link-691-10495"
                     className="ct-link"
@@ -125,85 +134,7 @@ const FirstHomeComponent = () => {
                     <img
                       id="image-670-10495"
                       alt=""
-                      src="https://influencers.ar-ad.com/wp-content/uploads/2021/10/logos_01.png"
-                      className="ct-image"
-                    />
-                  </a>
-                  <a
-                    id="link-694-10495"
-                    className="ct-link"
-                    href="https://www.ea.com/"
-                    target="_self"
-                  >
-                    <img
-                      id="image-671-10495"
-                      alt=""
-                      src="https://influencers.ar-ad.com/wp-content/uploads/2021/10/logos_02.png"
-                      className="ct-image"
-                    />
-                  </a>
-                  <a
-                    id="link-697-10495"
-                    className="ct-link"
-                    href="https://www.riotgames.com/"
-                    target="_self"
-                  >
-                    <img
-                      id="image-672-10495"
-                      alt=""
-                      src="https://influencers.ar-ad.com/wp-content/uploads/2021/10/logos_03.png"
-                      className="ct-image"
-                    />
-                  </a>
-                  <a
-                    id="link-698-10495"
-                    className="ct-link"
-                    href="https://www.moonton.com/"
-                    target="_self"
-                  >
-                    <img
-                      id="image-673-10495"
-                      alt=""
-                      src="https://influencers.ar-ad.com/wp-content/uploads/2021/10/logos_04.png"
-                      className="ct-image"
-                    />
-                  </a>
-                  <a
-                    id="link-699-10495"
-                    className="ct-link"
-                    href="https://www.huawei.com/"
-                    target="_self"
-                  >
-                    <img
-                      id="image-674-10495"
-                      alt=""
-                      src="https://influencers.ar-ad.com/wp-content/uploads/2021/11/huawei.png"
-                      className="ct-image"
-                    />
-                  </a>
-                  <a
-                    id="link-703-10495"
-                    className="ct-link"
-                    href="https://global.redmagic.gg/"
-                    target="_self"
-                  >
-                    <img
-                      id="image-675-10495"
-                      alt=""
-                      src="https://influencers.ar-ad.com/wp-content/uploads/2021/11/redmagic-phone.png"
-                      className="ct-image"
-                    />
-                  </a>
-                  <a
-                    id="link-690-10495"
-                    className="ct-link"
-                    href="https://influencers.ar-ad.com/case-study/"
-                    target="_blank"
-                  >
-                    <img
-                      id="image-676-10495"
-                      alt=""
-                      src="https://influencers.ar-ad.com/wp-content/uploads/2021/11/and-much-more.png"
+                      src={brandImg}
                       className="ct-image"
                     />
                   </a>
@@ -213,25 +144,14 @@ const FirstHomeComponent = () => {
             <div
               id="div_block-630-10495"
               className="ct-div-block aos-init aos-animate"
-              data-aos="fade"
-              data-aos-duration="500"
-              data-aos-once="true"
             >
               <img
                 id="image-97-10495"
                 alt=""
-                src="https://influencers.ar-ad.com/wp-content/uploads/2021/07/header-bg.png"
-                className="ct-image box-content-1-bg"
-              />
-              <img
-                id="image-631-10495"
-                alt=""
-                src="https://influencers.ar-ad.com/wp-content/uploads/2022/02/arabic-gamers.png"
-                className="ct-image header-people aos-init aos-animate"
-                data-aos="fade-up"
-                data-aos-duration="40"
-                data-aos-offset="-100"
-                data-aos-delay="400"
+                src={currentImage}
+                className={`ct-image box-content-1-bg 
+                      
+                       `}
               />
             </div>
           </div>

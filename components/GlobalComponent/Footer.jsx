@@ -19,7 +19,7 @@ const Footer = () => {
                   alt=""
                   src="https://influencers.ar-ad.com/wp-content/uploads/2021/07/main-logo-150x150.png"
                   className="ct-image"
-                  srcSet
+                
                   sizes="(max-width: 150px) 100vw, 150px"
                 />
                 <div id="text_block-18-10588" className="ct-text-block">

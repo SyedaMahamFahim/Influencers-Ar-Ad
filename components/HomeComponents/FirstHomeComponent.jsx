@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { MotionWrap } from "../../appWrapper/index";
-
+import { motion } from "framer-motion";
 const FirstHomeComponent = () => {
   const images = [
     "/assests/images/MaskGroup1.png",
@@ -40,21 +40,27 @@ const FirstHomeComponent = () => {
               id="div_block-156-10495"
               className="ct-div-block content-box-inner div-mb-rtion"
             >
-              <h2
+              <motion.h2
                 id="headline-52-10495"
                 className="ct-headline aos-init aos-animate"
+                whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+                transition={{ duration: 0.6 }}
               >
                 Gaming &amp; Esports Talent Agency
-              </h2>
-              <h2
+              </motion.h2>
+              <motion.h2
                 id="headline-54-10495"
                 className="ct-headline aos-init aos-animate"
+                whileInView={{ y: [-100, 50, 0], opacity: [0, 0, 1] }}
+                transition={{ duration: 0.6 }}
               >
                 #Connect Your Brand With Arabic Millennials.
-              </h2>
-              <div
+              </motion.h2>
+              <motion.div
                 id="div_block-56-10495"
                 className="ct-div-block aos-init aos-animate"
+                whileInView={{ x: [100, 50, 0], opacity: [0, 0, 1] }}
+                transition={{ duration: 0.6 }}
               >
                 <div
                   id="div_block-57-10495"
@@ -122,24 +128,29 @@ const FirstHomeComponent = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              {console.log(brandImg)}
-              <div id="div_block-626-10495">
-                <div className="ct-div-block">
-                  <a
-                    id="link-691-10495"
-                    className="ct-link"
-                    href="https://www.pubgmobile.com/ar/home.shtml"
-                  >
-                    <img
-                      id="image-670-10495"
-                      alt=""
-                      src={brandImg}
-                      className="ct-image"
-                    />
-                  </a>
+              </motion.div>
+
+              <motion.div
+                whileInView={{ x: [-100, 50, 0], opacity: [0, 0, 1] }}
+                transition={{ duration: 0.6 }}
+              >
+                <div id="div_block-626-10495">
+                  <div className="ct-div-block">
+                    <a
+                      id="link-691-10495"
+                      className="ct-link"
+                      href="https://www.pubgmobile.com/ar/home.shtml"
+                    >
+                      <img
+                        id="image-670-10495"
+                        alt=""
+                        src={brandImg}
+                        className="ct-image"
+                      />
+                    </a>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div
               id="div_block-630-10495"

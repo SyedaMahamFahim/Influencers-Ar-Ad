@@ -21,7 +21,7 @@ const Header = () => {
                   alt=""
                   src="https://influencers.ar-ad.com/wp-content/uploads/2021/07/main-logo-236x300.png"
                   class="ct-image"
-                  srcset=""
+               
                   sizes="(max-width: 236px) 100vw, 236px"
                 />
               </a>
@@ -105,7 +105,7 @@ const Header = () => {
                       >
                         <a
                           href="https://influencers.ar-ad.com/zh/"
-                          hreflang="zh-CN"
+                          hrefLang="zh-CN"
                           lang="zh-CN"
                         >
                           中文 (中国)

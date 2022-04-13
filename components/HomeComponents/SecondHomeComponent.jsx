@@ -1,8 +1,10 @@
 import React from "react";
+import { MotionWrap } from "../../appWrapper/index";
 
 const SecondHomeComponent = () => {
   return (
     <>
+     
       <section id="section-677-10495" className=" ct-section">
         <div className="ct-section-inner-wrap">
           <div id="div_block-678-10495" className="ct-div-block gaming-container">
@@ -82,8 +84,9 @@ const SecondHomeComponent = () => {
           </div>
         </div>
       </section>
+     
     </>
   );
 };
+export default MotionWrap(SecondHomeComponent);
 
-export default SecondHomeComponent;

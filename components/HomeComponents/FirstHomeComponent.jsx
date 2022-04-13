@@ -1,4 +1,5 @@
 import React from "react";
+import { MotionWrap } from "../../appWrapper/index";
 
 const FirstHomeComponent = () => {
   return (
@@ -240,4 +241,4 @@ const FirstHomeComponent = () => {
   );
 };
 
-export default FirstHomeComponent;
+export default MotionWrap(FirstHomeComponent);

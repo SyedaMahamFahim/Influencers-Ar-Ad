@@ -42,4 +42,6 @@ const OurPlatforms = () => {
   )
 }
 
+
+
 export default OurPlatforms

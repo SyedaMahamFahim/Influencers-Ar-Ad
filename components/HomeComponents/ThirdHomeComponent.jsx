@@ -1,4 +1,5 @@
 import React from "react";
+import { MotionWrap } from "../../appWrapper/index";
 
 const ThirdHomeComponent = () => {
   return (
@@ -104,4 +105,5 @@ const ThirdHomeComponent = () => {
   );
 };
 
-export default ThirdHomeComponent;
+export default MotionWrap(ThirdHomeComponent);
+

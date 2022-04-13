@@ -1,4 +1,6 @@
 import React from "react";
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 const NumberCounter = () => {
   return (
@@ -7,10 +9,7 @@ const NumberCounter = () => {
         <div className="ct-section-inner-wrap">
           <div
             id="div_block-39-10588"
-            className="ct-div-block counter-container aos-init aos-animate"
-            data-aos-enable="true"
-            data-aos="zoom-out"
-            data-aos-once="true"
+            className="ct-div-block counter-container"
           >
             <h2 id="headline-40-10588" className="ct-headline">
               Let the numbers speak
@@ -28,10 +27,17 @@ const NumberCounter = () => {
                 className="ct-div-block single-counter-up"
               >
                 <h4 id="headline-44-10588" className="ct-headline counter-head">
-                  <span id="span-45-10588" className="ct-span counter">
-                    200
-                  </span>
-                  +
+                  <CountUp start={0} end={200} duration={1} >
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start}>
+                        <span
+                        id="span-45-10588"
+                        className="ct-span counter"
+                        ref={countUpRef}
+                      > + </span>
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 </h4>
                 <div
                   id="text_block-46-10588"
@@ -45,10 +51,17 @@ const NumberCounter = () => {
                 className="ct-div-block single-counter-up"
               >
                 <h4 id="headline-48-10588" className="ct-headline counter-head">
-                  <span id="span-49-10588" className="ct-span counter">
-                    40
-                  </span>
-                  +
+                  
+                  <CountUp start={0} end={40} duration={1} >
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start}>
+                        <span
+                       id="span-49-10588" className="ct-span counter"
+                        ref={countUpRef}
+                      > + </span>
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 </h4>
                 <div
                   id="text_block-50-10588"
@@ -62,10 +75,17 @@ const NumberCounter = () => {
                 className="ct-div-block single-counter-up"
               >
                 <h4 id="headline-52-10588" className="ct-headline counter-head">
-                  <span id="span-53-10588" className="ct-span counter">
-                    70
-                  </span>
-                  +
+                 
+                  <CountUp start={0} end={70} duration={1} >
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start}>
+                        <span
+                      id="span-53-10588" className="ct-span counter"
+                        ref={countUpRef}
+                      > + </span>
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 </h4>
                 <div
                   id="text_block-54-10588"
@@ -79,10 +99,17 @@ const NumberCounter = () => {
                 className="ct-div-block single-counter-up"
               >
                 <h4 id="headline-56-10588" className="ct-headline counter-head">
-                  <span id="span-57-10588" className="ct-span counter">
-                    50
-                  </span>
-                  M
+                  
+                  <CountUp start={0} end={50} duration={1} >
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start}>
+                        <span
+                      id="span-57-10588" className="ct-span counter"
+                        ref={countUpRef}
+                      > M </span>
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 </h4>
                 <div
                   id="text_block-58-10588"
@@ -99,6 +126,16 @@ const NumberCounter = () => {
                   <span id="span-61-10588" className="ct-span counter">
                     27
                   </span>
+                  <CountUp start={0} end={27} duration={1} >
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start}>
+                        <span
+                     id="span-61-10588" className="ct-span counter"
+                        ref={countUpRef}
+                      > M </span>
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 </h4>
                 <div
                   id="text_block-62-10588"

@@ -23,15 +23,12 @@ const StartACampaign = () => {
                 <h2
                   id="headline-98-10588"
                   className="ct-headline aos-init aos-animate"
-                  data-aos="fade-right"
-                  data-aos-once="true"
                 >
                   Start a campaign with us! <br />
                 </h2>
                 <div
                   id="text_block-99-10588"
                   className="ct-text-block aos-init aos-animate"
-                  data-aos="fade-right"
                 >
                   Simply write us a message to tell us about your upcoming
                   project! Our salesperson will contact you as soon as possible
@@ -43,7 +40,6 @@ const StartACampaign = () => {
                 <div
                   id="div_block-100-10588"
                   className="ct-div-block border-effect border-effect-alt aos-init"
-                  data-aos="fade-right"
                 >
                   <a
                     id="link_button-101-10588"
@@ -60,15 +56,13 @@ const StartACampaign = () => {
                   alt=""
                   src="https://influencers.ar-ad.com/wp-content/uploads/2021/07/camgaign-img.png"
                   className="ct-image aos-init aos-animate"
-                  data-aos="fade-left"
-                  data-aos-once="true"
                 />
               </div>
             </div>
           </div>
           <img
             id="image-104-10588"
-            alt=""
+            alt="blur-dots"
             src="https://influencers.ar-ad.com/wp-content/uploads/2021/07/blue-dots.png"
             className="ct-image blue-dots dots-zoom-animate"
           />
@@ -79,3 +73,5 @@ const StartACampaign = () => {
 };
 
 export default StartACampaign;
+
+

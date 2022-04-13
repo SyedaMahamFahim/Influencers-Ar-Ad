@@ -1,12 +1,44 @@
 import React from "react";
 import Link from "next/link";   
+import styles from "./header.module.css";
+
+const MobileHeader = () => {
+  return (
+    <>
+      <div className={`${styles.mobile_header_container}`}>
+        <div className={`${styles.mobile_header_box}`}>
+          <div className={`${styles.mobile_header__top}`}>
+            <ImCross />
+          </div>
+          <div className={`${styles.mobile_header__top}`}>
+            <nav className="font-poppins hidden lg:block font-poppins text-[20px] font-medium md:ml-auto md:mr-auto flex items-center justify-center">
+              {NavLinks.map((val) => (
+                <NavLinksComponent
+                  pageTitle={val.pageName}
+                  key={val.id}
+                  url={val.url}
+                />
+              ))}
+              <a
+                href=""
+                className={`mr-8 hover:text-orange cursor-pointer ${styles.nav_links}`}
+              >
+                中文 (中国)
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 const Header = () => {
   return (
     <>
       <header
         id="_header-2-10588"
-        class="oxy-header-wrapper oxy-overlay-header oxy-header site-header"
+        class={`${styles.desktop_header} oxy-header-wrapper oxy-overlay-header oxy-header site-header`}
       >
         <div id="_header_row-3-10588" class="oxy-header-row">
           <div class="oxy-header-container">
@@ -26,15 +58,9 @@ const Header = () => {
                 />
               </a>
             </div>
-            <div id="_header_center-7-10588" class="oxy-header-center">
-              <div id="-pro-menu-8-10588" class="oxy-pro-menu ">
-                <div
-                  class="oxy-pro-menu-mobile-open-icon "
-                  data-off-canvas-alignment=""
-                >
-                  <svg id="-pro-menu-8-10588-open-icon">
-                  </svg>
-                </div>
+            <div >
+              <div >
+               
 
                 <div
                   class="oxy-pro-menu-container  oxy-pro-menu-dropdown-links-visible-on-mobile oxy-pro-menu-dropdown-links-toggle oxy-pro-menu-show-dropdown oxy-pro-menu-init"

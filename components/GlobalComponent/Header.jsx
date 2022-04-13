@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import styles from "./header.module.css";
+
+import { ImCross } from "react-icons/im";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <>
       <header
@@ -18,7 +24,6 @@ const Header = () => {
                     alt=""
                     src="https://influencers.ar-ad.com/wp-content/uploads/2021/07/main-logo-236x300.png"
                     className="ct-image"
-                  
                     sizes="(max-width: 236px) 100vw, 236px"
                   />
                 </a>
@@ -30,7 +35,12 @@ const Header = () => {
                   className="oxy-pro-menu-mobile-open-icon "
                   data-off-canvas-alignment=""
                 >
-                  <svg id="-pro-menu-8-10588-open-icon"></svg>
+                  <p
+                    color="black"
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                  >
+                    <GiHamburgerMenu />
+                  </p>
                 </div>
 
                 <div className="oxy-pro-menu-container  oxy-pro-menu-dropdown-links-visible-on-mobile oxy-pro-menu-dropdown-links-toggle oxy-pro-menu-show-dropdown oxy-pro-menu-init">
@@ -85,7 +95,7 @@ const Header = () => {
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-10501"
                       >
                         <Link href="/case-study">
-                          <a href="https://influencers.ar-ad.com/case-study/">
+                          <a>
                             Case Studies
                             <div className="oxy-pro-menu-dropdown-icon-click-area"></div>
                           </a>
@@ -143,6 +153,53 @@ const Header = () => {
           </div>
         </div>
       </header>
+
+      {isMobileMenuOpen && (
+        <div className={`${styles.mobile_header_container}`}>
+          <div className={`${styles.mobile_header_box}`}>
+            <div
+              className={`${styles.mobile_header__top}`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <ImCross /> close
+            </div>
+            <div className={`${styles.mobile_header__top}`}>
+              <nav
+                className={`text-[20px] font-medium md:ml-auto flex flex-cloumn items-center justify-center ${styles.mobile_header_navbar}`}
+              >
+                <Link href="/">
+                  Home
+                </Link>
+                <Link href="/services">
+                  Services
+                </Link>
+                <Link href="/influencers">
+                  Influencers
+                </Link>
+                <Link href="/esports-talents">
+                   On-Air Talents
+                </Link>
+                <Link href="/case-study">
+                  Case Studies
+                </Link>
+                <Link href="/about-us">
+                About us
+                </Link>
+                <Link href="/about-us">
+                          <a
+                            href="https://influencers.ar-ad.com/zh/"
+                            hrefLang="zh-CN"
+                            lang="zh-CN"
+                          >
+                            中文 (中国)
+                            <div className="oxy-pro-menu-dropdown-icon-click-area"></div>
+                          </a>
+                        </Link>
+              </nav>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

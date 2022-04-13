@@ -43,6 +43,9 @@ h6 {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Changa ,Nunito,Montserrat,Poppins,Roboto, Helvetica 
 }
+body{
+	overflow-x:hidden !important ;
+}
 article,
 aside,
 details,
@@ -363,7 +366,7 @@ div.ct-fancy-icon {
     top: 46px !important;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .admin-bar .oxy-sticky-header-active {
     top: 0 !important;
   }
@@ -3005,7 +3008,7 @@ https://influencers.ar-ad.com/?xlink=css&ver=5.9.3
 	color: #ff7009
 }
 
-@media (max-width:991px) {
+@media (max-width:1300px) {
 	#-pro-menu-8-10588 .oxy-pro-menu-mobile-open-icon {
 		display: inline-flex
 	}
@@ -3018,6 +3021,9 @@ https://influencers.ar-ad.com/?xlink=css&ver=5.9.3
 	}
 	#-pro-menu-8-10588.oxy-pro-menu-open .oxy-pro-menu-container {
 		visibility: visible
+	}
+	.oxy-header-right{
+		display:none !important
 	}
 }
 
@@ -10057,7 +10063,7 @@ div.ct-fancy-icon {
 }
 .oxy-header-center {
   flex-grow: 1;
-  justify-content: center;
+  justify-content: end;
 }
 .oxy-header-right {
   justify-content: flex-end;
@@ -10806,4 +10812,5 @@ div.oxy-repeater-pages, div.oxy-repeater-pages-wrap {
 	  opacity: 1;
 	}
   }
+
   

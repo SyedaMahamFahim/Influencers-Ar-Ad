@@ -1,0 +1,174 @@
+.rzb-header-one a.elementor-button-link.elementor-button.elementor-size-sm {
+    background-image: linear-gradient(to top, #D04B00, #FFC658);
+    position: relative;
+    box-shadow: 0 35px 55px rgb(238 112 8 / 50%);
+    z-index: 1;
+}
+
+.rzb-header-one a.elementor-button-link.elementor-button.elementor-size-sm:after, .rzb-header-one a.elementor-button-link.elementor-button.elementor-size-sm:before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    left: -11px;
+    right: -11px;
+    width: auto;
+    top: -12px;
+    bottom: -12px;
+    border: 1px solid rgb(255 41 105 / 30%);
+    border-radius: 65px;
+}
+
+.rzb-header-one a.elementor-button-link.elementor-button.elementor-size-sm:before {
+    left: -22px;
+    right: -22px;
+    top: -24px;
+    bottom: -24px;
+    border-color: rgb(255 121 129 / 25%);
+}
+	
+	
+	/* Home Page banner Custom css*/
+	
+	@media(max-width: 1024px){
+.elementor-9588 .elementor-element.elementor-element-09fbc13:not(.elementor-motion-effects-element-type-background) > .elementor-column-wrap, .elementor-9588 .elementor-element.elementor-element-09fbc13 > .elementor-column-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-position: 46% 28%;
+    background-repeat: no-repeat;
+    background-size: 120% 123%;
+}
+}
+
+	/* footer social section  number border*/
+	
+	.rzb-social h2.elementor-heading-title.elementor-size-default:after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 105%;
+    width: 40px;
+    background: #fe9c1a;
+    left: 50%;
+    transform: translateX(-50%);
+}
+	/* footer social section  number colum botton*/
+	.rzb-colum::after {
+    content: "";
+    height: 57px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    border-radius: 20%;
+    z-index: 0;
+    background: #fff;
+    position: absolute;
+    top: 74%;
+    z-index: -1;
+}
+/* footer social section */	
+.rzb-social .elementor-column-wrap.elementor-element-populated:after {
+    content: "";
+    height: 57px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    border-radius: 20%;
+    z-index: 0;
+    background: #fff;
+    position: absolute;
+    top: 68%;
+    z-index: -1;
+}
+	/* footer social section boder effect */	
+	.rzb-social i.fab.fa-twitter:after{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    left: -25px;
+    right: -25px;
+    width: auto;
+    top: -25px;
+    bottom: -25px;
+    border: 1px solid #316DE0;
+    border-radius: 65px;
+}
+
+.rzb-social i.fab.fa-instagram:after{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    left: -25px;
+    right: -25px;
+    width: auto;
+    top: -25px;
+    bottom: -25px;
+    border: 1px solid #316DE0;
+    border-radius: 65px;
+}
+.rzb-social i.fab.fa-youtube:after{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    left: -25px;
+    right: -25px;
+    width: auto;
+    top: -25px;
+    bottom: -25px;
+    border: 1px solid #316DE0;
+    border-radius: 65px;
+}
+
+.rzb-social i.fab.fa-tiktok:after{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    left: -25px;
+    right: -25px;
+    width: auto;
+    top: -25px;
+    bottom: -25px;
+    border: 1px solid #316DE0;
+    border-radius: 65px;
+}
+
+.rzb-social i.fab.fa-facebook-f:after{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    left: -25px;
+    right: -25px;
+    width: auto;
+    top: -25px;
+    bottom: -25px;
+    border: 1px solid #316DE0;
+    border-radius: 65px;
+}
+	
+	.rzb-social i.fab.fa-twitch:after{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    left: -25px;
+    right: -25px;
+    width: auto;
+    top: -25px;
+    bottom: -25px;
+    border: 1px solid #316DE0;
+    border-radius: 65px;
+}
+
+.rzb-social .elementor-icon:after {
+    border: 1px solid #fff;
+    position: absolute;
+    z-index: 1;
+    content: "";
+    left: -15px;
+    right: -15px;
+    width: auto;
+    top: -15px;
+    bottom: -15px;
+    border: 1px solid #316de052;
+    border-radius: 65px;
+}
+
+.rzb-social .elementor-icon {
+    position: relative;
+}

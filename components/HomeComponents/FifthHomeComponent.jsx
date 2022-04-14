@@ -18,8 +18,6 @@ const FifthHomeComponent = () => {
               alt=""
               src="https://influencers.ar-ad.com/wp-content/uploads/2021/07/content-box-4.png"
               className="ct-image aos-init aos-animate"
-              data-aos="zoom-in"
-              data-aos-once="true"
             />
             <div
               id="div_block-295-10495"

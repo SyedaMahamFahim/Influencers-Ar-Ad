@@ -1,11 +1,22 @@
 import { AppWrapper } from "../appWrapper/index";
+import {
+  FirstServiceComponent,
+  SecondServiceComponent,
+  ThirdServiceComponent
+
+} from '../components/ServicesComponents/index'
+
 
 const Services = () => {
   return (
     <>
       <div id="inner_content-12-10588" className="ct-inner-content">
-       
+       <FirstServiceComponent/>
+       <SecondServiceComponent/>
+       <ThirdServiceComponent/>
+
       </div>
+      
     </>
   );
 };

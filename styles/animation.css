@@ -1,0 +1,114 @@
+.cloud-animate {
+    animation: cloudAnimate 50s linear infinite;
+    -webkit-animation: cloudAnimate 50s linear infinite;
+}
+.page-header-cloud {
+    animation: cloudAnimateSinglePage 50s linear infinite;
+    -webkit-animation: cloudAnimateSinglePage 50s linear infinite;
+}
+.step-cloud {
+    animation: stepCloud 50s linear infinite;
+    -webkit-animation: stepCloud 50s linear infinite;
+}
+@keyframes cloudAnimate {
+    0% {
+        right: -15%;
+    }
+    50% {
+        right: 20%;
+    }
+    100% {
+        right: -15%;
+    }
+}
+@keyframes cloudAnimateSinglePage {
+    0% {
+        right: 0%;
+    }
+    50% {
+        right: 10%;
+    }
+    100% {
+        right: 0%;
+    }
+}
+@keyframes stepCloud {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 15%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+.rotate-animate {
+    animation: rotateAnimate 16s linear infinite;
+    -webkit-animation: rotateAnimate 16s linear infinite;
+    z-index: 5;
+}
+@keyframes rotateAnimate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.dots-zoom-animate {
+    animation: dotsZoomAnimate 10s linear infinite;
+    -webkit-animation: dotsZoomAnimate 10s linear infinite;
+    z-index: 5;
+}
+@keyframes dotsZoomAnimate {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+}
+.chevron {
+    position: absolute;
+    width: 40px;
+    opacity: 0;
+    animation: scrollAnimate 3s ease-out infinite;
+    top: 0;
+}
+.chevron:first-child {
+    animation: scrollAnimate 3s ease-out 1s infinite;
+}
+.chevron:nth-child(2) {
+    animation: scrollAnimate 3s ease-out 2s infinite;
+}
+@keyframes scrollAnimate {
+    25% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    67% {
+        opacity: 1;
+        transform: translateY(45px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(60px) scale3d(0.5, 0.5, 0.5);
+    }
+}

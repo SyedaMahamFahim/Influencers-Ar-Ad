@@ -53,7 +53,7 @@ const Header = () => {
                         <Link href="/">
                           <a>
                             Home
-                            <div className="oxy-pro-menu-dropdown-icon-click-area"></div>
+                            
                           </a>
                         </Link>
                       </li>
@@ -64,7 +64,7 @@ const Header = () => {
                         <Link href="/services">
                           <a>
                             Services
-                            <div className="oxy-pro-menu-dropdown-icon-click-area"></div>
+                            
                           </a>
                         </Link>
                       </li>
@@ -75,7 +75,7 @@ const Header = () => {
                         <Link href="/influencers">
                           <a>
                             Influencers
-                            <div className="oxy-pro-menu-dropdown-icon-click-area"></div>
+                            
                           </a>
                         </Link>
                       </li>
@@ -86,7 +86,7 @@ const Header = () => {
                         <Link href="/esports-talents">
                           <a>
                             On-Air Talents
-                            <div className="oxy-pro-menu-dropdown-icon-click-area"></div>
+                            
                           </a>
                         </Link>
                       </li>
@@ -97,7 +97,7 @@ const Header = () => {
                         <Link href="/case-study">
                           <a>
                             Case Studies
-                            <div className="oxy-pro-menu-dropdown-icon-click-area"></div>
+                            
                           </a>
                         </Link>
                       </li>
@@ -108,7 +108,7 @@ const Header = () => {
                         <Link href="/about-us">
                           <a>
                             About us
-                            <div className="oxy-pro-menu-dropdown-icon-click-area"></div>
+                            
                           </a>
                         </Link>
                       </li>
@@ -123,7 +123,7 @@ const Header = () => {
                             lang="zh-CN"
                           >
                             中文 (中国)
-                            <div className="oxy-pro-menu-dropdown-icon-click-area"></div>
+                            
                           </a>
                         </Link>
                       </li>
@@ -192,7 +192,7 @@ const Header = () => {
                             lang="zh-CN"
                           >
                             中文 (中国)
-                            <div className="oxy-pro-menu-dropdown-icon-click-area"></div>
+                            
                           </a>
                         </Link>
               </nav>

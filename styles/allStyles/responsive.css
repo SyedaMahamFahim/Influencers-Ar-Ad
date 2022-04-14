@@ -197,7 +197,7 @@
     }
   
     .page-header-content {
-      transform: ;
+    
       position: relative;
       top: 0px;
       left: 0px;
@@ -320,8 +320,7 @@
     .cm-section.ct-section .ct-section-inner-wrap:before {
       display: none;
     }
-    .cm-section:after {
-    }
+   
     .cm-section:not(.ct-section):not(.oxy-easy-posts):after,
     .cm-section.oxy-easy-posts .oxy-posts:after,
     .cm-section.ct-section .ct-section-inner-wrap:after {
@@ -686,7 +685,7 @@
 
  
 /*------------ Extra small devices ------------*/
-@media (max-width: 992px) {
+@media (max-width: 1480px) {
     body {
         position: relative;
         overflow-x: hidden !important;
@@ -821,7 +820,10 @@
 }
  
 /*----------- Large Mobile -------------*/
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (max-width: 1200px) {
     
-   
+   .oxy-pro-menu-container {
+     display: none !important;
+   }
 }
+

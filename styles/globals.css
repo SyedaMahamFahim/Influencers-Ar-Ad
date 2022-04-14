@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
 @import url("./allStyles/animation.css");
 @import url("./allStyles/custom.css");
 /* @import url("./allStyles/aosver5_9_3.css"); */

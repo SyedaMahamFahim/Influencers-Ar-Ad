@@ -1,10 +1,15 @@
 import { AppWrapper } from "../appWrapper/index";
-
+import {
+  FirstCaseComponent,
+    SecondCaseComponent
+} from '../components/CaseStudyComponent/index'
 const CaseStudy = () => {
   return (
     <>
       <div id="inner_content-12-10588" className="ct-inner-content">
-       
+       <FirstCaseComponent/>
+       < SecondCaseComponent/>
+   
       </div>
     </>
   );

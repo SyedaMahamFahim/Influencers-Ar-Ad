@@ -1945,7 +1945,7 @@
     color: #ff7009
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1300px) {
     #-pro-menu-8-10588 .oxy-pro-menu-mobile-open-icon {
         display:inline-flex
     }
@@ -1977,7 +1977,6 @@
 
 #-pro-menu-8-10588:hover {
     color: FF7009;
-    oxy-pro-menu-slug-oxypromenulistmenuitemmenuitemmenuitemmenuitemacolor: #ff7009
 }
 
 @media (max-width: 767px) {

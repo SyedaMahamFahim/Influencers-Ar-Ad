@@ -589,7 +589,7 @@
     }
 }
 /*------------ Extra small devices ------------*/
-@media (max-width: 992px) {
+@media (max-width: 1400px) {
     body {
         position: relative;
         overflow-x: hidden !important;

@@ -3419,7 +3419,8 @@ a:hover {
     }
 }
 
-@media (max-width: 767px) {
+
+ @media (max-width: 767px) {
     .social-links {
         width:100%;
         max-width: 300px;
@@ -3434,7 +3435,7 @@ a:hover {
         grid-column-gap: 20px;
         grid-row-gap: 20px
     }
-}
+} 
 
 .social-container {
     max-width: 1240px;
@@ -6077,4 +6078,11 @@ a:hover {
 }
 
 .host {
+}
+
+@media screen and (max-width:1250px) and (min-width:991px){
+    .social-links{
+            display: flex!;
+
+    }
 }

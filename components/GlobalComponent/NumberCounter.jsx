@@ -5,7 +5,7 @@ import VisibilitySensor from "react-visibility-sensor";
 const NumberCounter = () => {
   return (
     <>
-      <section id="section-38-10588" className=" ct-section counter-section">
+      <section id="section-38-10588" className="ct-section counter-section">
         <div className="ct-section-inner-wrap">
           <div
             id="div_block-39-10588"

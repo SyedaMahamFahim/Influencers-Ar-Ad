@@ -32,7 +32,7 @@ const FirstHomeComponent = () => {
     <>
       <section
         id="section-38-10495"
-        className=" ct-section agency-section background-design-1"
+        className="ct-section agency-section background-design-1"
       >
         <div className="ct-section-inner-wrap">
           <div id="div_block-40-10495" className="ct-div-block box-content">

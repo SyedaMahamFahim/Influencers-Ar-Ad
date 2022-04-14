@@ -17,8 +17,8 @@ const Header = () => {
         <div id="_header_row-3-10588" className="oxy-header-row">
           <div className="oxy-header-container">
             <div id="_header_left-4-10588" className="oxy-header-left">
-              {/* <Link href="/"> */}
-                <a id="link-5-10588" href="/" className="ct-link">
+              <Link href="/">
+                <a id="link-5-10588" className="ct-link">
                   <img
                     id="image-6-10588"
                     alt=""
@@ -27,7 +27,7 @@ const Header = () => {
                     sizes="(max-width: 236px) 100vw, 236px"
                   />
                 </a>
-              {/* </Link> */}
+              </Link>
             </div>
             <div id="_header_center-7-10588" className="oxy-header-center">
               <div id="-pro-menu-8-10588" className="oxy-pro-menu ">
@@ -50,74 +50,74 @@ const Header = () => {
                         id="menu-item-10500"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10495 current_page_item menu-item-10500"
                       >
-                        {/* <Link href="/"> */}
-                          <a href="/">
+                        <Link href="/">
+                          <a>
                             Home
                             
                           </a>
-                        {/* </Link> */}
+                        </Link>
                       </li>
                       <li
                         id="menu-item-10503"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-10503"
                       >
-                        {/* <Link href="/services"> */}
-                          <a href="/services">
+                        <Link href="/services">
+                          <a>
                             Services
                             
                           </a>
-                        {/* </Link> */}
+                        </Link>
                       </li>
                       <li
                         id="menu-item-10718"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-10718"
                       >
-                        {/* <Link href="/influencers"> */}
-                          <a href="/influencers">
+                        <Link href="/influencers">
+                          <a>
                             Influencers
                             
                           </a>
-                        {/* </Link> */}
+                        </Link>
                       </li>
                       <li
                         id="menu-item-10717"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-10717"
                       >
-                        {/* <Link href="/esports-talents"> */}
-                          <a href="/esports-talents">
+                        <Link href="/esports-talents">
+                          <a>
                             On-Air Talents
                             
                           </a>
-                        {/* </Link> */}
+                        </Link>
                       </li>
                       <li
                         id="menu-item-10501"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-10501"
                       >
-                        {/* <Link href="/case-study"> */}
-                          <a href="/case-study">
+                        <Link href="/case-study">
+                          <a>
                             Case Studies
                             
                           </a>
-                        {/* </Link> */}
+                        </Link>
                       </li>
                       <li
                         id="menu-item-10502"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-10502"
                       >
-                        {/* <Link > */}
-                          <a href="/about-us">
+                        <Link href="/about-us">
+                          <a>
                             About us
                             
                           </a>
-                        {/* </Link> */}
+                        </Link>
                       </li>
                       <li
                         id="menu-item-10880-zh"
                         className="lang-item lang-item-123 lang-item-zh lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-10880-zh"
                       >
-                        {/* <Link > */}
-                          <a 
+                        <Link href="/about-us">
+                          <a
                             href="https://influencers.ar-ad.com/zh/"
                             hrefLang="zh-CN"
                             lang="zh-CN"
@@ -125,7 +125,7 @@ const Header = () => {
                             中文 (中国)
                             
                           </a>
-                        {/* </Link> */}
+                        </Link>
                       </li>
                     </ul>
                   </div>

@@ -62,7 +62,7 @@
     z-index: 3
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
     #section-38-10495 > .ct-section-inner-wrap {
         padding-top:50px;
         padding-bottom: 50px
@@ -73,34 +73,34 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
     #section-677-10495 {
         max-width:100%;
         width: 100%
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
     #section-292-10495 > .ct-section-inner-wrap {
         padding-bottom:0
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
     #section-38-10588 > .ct-section-inner-wrap {
         padding-top:50px;
         padding-left: 50px
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
     #section-63-10588 > .ct-section-inner-wrap {
         padding-top:50px;
         padding-bottom: 50px
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
     #section-94-10588 > .ct-section-inner-wrap {
         padding-top:0
     }
@@ -110,7 +110,7 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
     #section-13-10588 {
         max-width:100%;
         width: 100%
@@ -1020,7 +1020,6 @@
     color: #040e29;
     font-size: 22px;
     text-align: center;
-    width: 980px;
     font-weight: 400;
     font-family: 'Montserrat'
 }
@@ -1945,7 +1944,7 @@
     color: #ff7009
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 991px) {
     #-pro-menu-8-10588 .oxy-pro-menu-mobile-open-icon {
         display:inline-flex
     }
@@ -1977,6 +1976,7 @@
 
 #-pro-menu-8-10588:hover {
     color: FF7009;
+    oxy-pro-menu-slug-oxypromenulistmenuitemmenuitemmenuitemmenuitemacolor: #ff7009
 }
 
 @media (max-width: 767px) {
@@ -2002,21 +2002,22 @@
 .ct-section>.ct-section-inner-wrap {
     display: flex;
     flex-direction: column;
-    align-items: flex-start
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .ct-div-block {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start
+    align-items: flex-start;
+    align-content:center
 }
 
 .ct-new-columns {
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: stretch;
+    width: 90%;
+    /* align-items: stretch; */
     justify-content: center;
     flex-wrap: wrap
 }
@@ -2499,13 +2500,6 @@
     width: 100%
 }
 
-div.ct-section-inner-wrap,div.oxy-header-container {
-    max-width: 1520px
-}
-
-.ct-section-inner-wrap,.oxy-header-container {
-    max-width: 1120px
-}
 
 body {
     font-family: 'Poppins'
@@ -6074,4 +6068,13 @@ a:hover {
     .filter-item {
         font-size:16px
     }
+}
+
+.casters {
+}
+
+.analyst {
+}
+
+.host {
 }
